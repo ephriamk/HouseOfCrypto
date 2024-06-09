@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { useGLTF, MeshReflectorMaterial, Float, Html } from "@react-three/drei";
+import { useGLTF, MeshReflectorMaterial, Float, Html} from "@react-three/drei";
 import { useFrame, useThree } from "@react-three/fiber";
 import gsap from "gsap";
 
@@ -10,9 +10,9 @@ export function House(props) {
 
   const moveCamera = () => {
     gsap.to(camera.position, {
-      x: 0,
-      y: 0,
-      z: 4,
+      x: 5,
+      y: 1,
+      z: 3,
       duration: 2,
       ease: "power2.inOut",
     });
@@ -88,10 +88,10 @@ export function House(props) {
       </group>
       <mesh
         rotation={[-Math.PI / 2, 0, 0]}
-        position={[-1.403, -1.08, -1.038]}
+        position={[1, -1.08, 0]}
         scale={4.14}
       >
-        <planeGeometry args={[2, 2]} />
+        <planeGeometry args={[3, 3]} />
         <MeshReflectorMaterial
           blur={[300, 100]}
           resolution={2048}
