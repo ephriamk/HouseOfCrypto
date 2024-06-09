@@ -10,9 +10,9 @@ export function House(props) {
 
   const moveCamera = () => {
     gsap.to(camera.position, {
-      x: 5,
-      y: 1,
-      z: 3,
+      x: 1.5,
+      y: -.5,
+      z: 0,
       duration: 2,
       ease: "power2.inOut",
     });
