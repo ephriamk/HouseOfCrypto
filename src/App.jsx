@@ -16,7 +16,13 @@ function App() {
     <div className='App'> 
 
       
-        <Canvas>
+        <Canvas onCreated={state=>{
+          state.camera.position.z = 30
+          state.camera.position.x = 0
+          state.camera.position.y = 10
+
+
+        }}>
           <ambientLight intensity={8} />
           <pointLight intensity={2} position={[-1, 2, -2]} />
           <OrbitControls />
