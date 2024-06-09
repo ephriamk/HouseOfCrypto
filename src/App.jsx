@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls } from '@react-three/drei'
-import { useGLTF, Gltf } from '@react-three/drei'
+import { useGLTF } from '@react-three/drei'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import { Sushi } from './Sushi'
 import { House } from './House'
@@ -14,7 +14,6 @@ function App() {
 
   return (
     <div className='App'> 
-
 
       
         <Canvas>
